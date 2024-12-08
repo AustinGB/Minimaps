@@ -1,0 +1,59 @@
+body {
+    background: #f2e0c9;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(12, 50px); 
+    grid-template-rows: repeat(12, 50px); 
+    gap: 0;
+    background-color: #f8f1e4;;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container {
+    padding: 0;
+}
+
+.row.g-0 {
+    margin: 0;
+}
+
+.control-panel {
+    background-color: #f8f1e4;;
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+}
+
+.cell.path {
+    background-color: #4caf50;
+    color: white;
+   
+}
+
+.cell.coordinate:hover {
+    background-color: #ecf0f1;
+}
+
+
+.instructions {
+    font-size: 14px;
+    color: black;
+    font-style: italic;
+}
